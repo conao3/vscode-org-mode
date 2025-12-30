@@ -1,38 +1,42 @@
 * vscode-org-mode
 
-[[https://orgmode.org/features.html][org-mode]] Language Support for Visual Studio Code via [[https://github.com/lsp-org-mode/lsp-org-mode][lsp-org-mode]].
+A Visual Studio Code extension providing [[https://orgmode.org/features.html][org-mode]] language support, powered by [[https://github.com/lsp-org-mode/lsp-org-mode][lsp-org-mode]].
 
 * Features
 
 ** Syntax Highlighting
 
+Full syntax highlighting support for org-mode files.
+
 [[file:./.github/blob/syntax-highlighting.png]]
 
 ** Section Folding
+
+Collapse and expand document sections for better navigation.
 
 [[file:./.github/blob/section-folding.png]]
 
 ** Code Completion
 
+Intelligent code completion for org-mode syntax.
+
 [[file:./.github/blob/code-completion.png]]
 
-** Code Action
+** Code Actions
 
-*** Table Align
+*** Table Alignment
+
+Automatically align org-mode tables with a single action.
 
 [[file:./.github/blob/code-action-table-align.png]]
 
 [[file:./.github/blob/code-action-table-align2.png]]
 
-* Usage
+* Installation
 
-** User usage
+** Prerequisites
 
-TODO
-
-** Developer usage
-
-*** Install lsp-org-mode
+Install the [[https://github.com/lsp-org-mode/lsp-org-mode][lsp-org-mode]] language server:
 
 #+begin_src shell
 git clone https://github.com/lsp-org-mode/lsp-org-mode.git
@@ -40,9 +44,11 @@ cd lsp-org-mode
 ln -s "$(pwd)/bin/lsp-org-mode" ~/.local/bin/
 #+end_src
 
-Ensure that `~/.local/bin` is in your `PATH`.
+Ensure that =~/.local/bin= is in your =PATH=.
 
-*** Install vscode-org-mode
+** Building from Source
+
+Clone and build the extension:
 
 #+begin_src shell
 git clone https://github.com/lsp-org-mode/vscode-org-mode.git
@@ -51,23 +57,21 @@ pnpm install
 pnpm build
 #+end_src
 
-*** Run vscode-org-mode
+* Development
 
-1. Open VSCode
+1. Open the project in VS Code:
 
    #+begin_src shell
    cd vscode-org-mode
    code .
    #+end_src
 
-2. Press `F5` to run child VSCode with vscode-org-mode extension.
+2. Press =F5= to launch a development instance with the extension loaded.
 
-3. Open a org file.
+3. Open any =.org= file to test the extension.
 
-   #+begin_src shell
-   code ~/path/to/org/file
-   #+end_src
+[[file:./.github/blob/vscode-debug.png]]
 
-4. Enjoy!
+* License
 
-   [[file:./.github/blob/vscode-debug.png]]
+Apache-2.0
