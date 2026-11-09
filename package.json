@@ -4,7 +4,7 @@
   "description": "",
   "author": "Naoya Yamashita <conao3@gmail.com>",
   "license": "Apache-2.0",
-  "packageManager": "pnpm@12.9.0",
+  "packageManager": "pnpm@12.18.0",
   "main": "./dist/extension.js",
   "engines": {
     "vscode": "^1.80.1"
@@ -14,8 +14,8 @@
     "watch": "tsc -p ./ -w"
   },
   "devDependencies": {
-    "@types/node": "^26.6.5",
-    "@types/vscode": "^1.140.0",
+    "@types/node": "^26.6.6",
+    "@types/vscode": "^1.145.0",
     "typescript": "^7.0.2"
   },
   "activationEvents": [
